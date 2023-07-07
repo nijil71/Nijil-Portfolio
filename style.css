@@ -1,0 +1,310 @@
+*{
+    margin: 0  ;
+    padding: 0 ;
+}
+body{
+    background-color: bisque !important;
+    color: black;
+    font-family: 'Poppins', sans-serif !important;
+}
+nav{
+    display: flex ;
+    justify-content: space-around ;
+    align-items: center ;
+    height: 90px ;
+    background-color: rgb(255, 239, 200);
+}
+nav ul{
+    display: flex ;
+    justify-content: center ;
+    margin-bottom: 0px;
+}
+nav ul li{
+    list-style: none ;
+    margin: 0 23px ;
+}
+nav ul li a{
+    margin: 0 23px ;
+    text-decoration: none;
+    color: black;
+}
+nav ul li a:hover{
+    color: rgb(157, 18, 18);
+
+}
+.left{
+    font-size: 1.5rem;
+}
+.firstSection{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 130px 0;
+}
+.firstSection > div{
+    width: 30%;
+}
+.leftsection{
+    font-size: 3rem;
+
+}
+.rightsection img{
+    width: 100%;
+}
+.name{
+    color: rgb(157, 18, 18);
+}
+#element{
+    color: rgb(157, 18, 18);
+}
+.secondSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.fhr{
+    border: 1px solid rgb(14, 14, 14);
+    margin: 40px 84px;
+}
+.secondSection h1{
+font-size: 2rem;
+}
+.skills{
+    display: flex;
+    margin: 60px 0;
+}
+.skills > div{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.skills > div img{
+    width: 70%;
+}
+
+/* creat a hover effect for the skills */
+.skills > div img:hover{
+    transform: scale(1.1);
+}
+
+
+.btn{
+    background-color: black !important ;
+    color: white;
+    padding: 10px 20px !important;
+    border-radius: 5px;
+    border: none !important;
+    cursor: pointer;
+}
+.btn:hover{
+    background-color: rgb(157, 18, 18) !important;
+}
+.thirdSection{
+    max-width: 80vw;
+    margin: auto;
+    height: 80vh;
+}
+.thirdSection h1{
+    font-size: 2rem ;
+}
+.card{
+    margin: 30px 0;
+    background-color: bisque !important; 
+    border: none !important;
+    width: 100% ;
+    height: 100%;
+    
+}
+.card-title h3{
+    font-size: 1.5rem;
+    color: rgb(157, 18, 18);
+    margin: 10px 0;
+}
+.col-6{
+    padding: 0 20px;
+    background-color: bisque;
+}
+
+.card-title p{
+    font-size: 1rem;
+    color: black;
+    margin: 10px 0;
+    line-height: 1.5rem;
+    text-align: justify;
+    padding-right: 20px;
+}
+
+
+.fouthhr{
+    border: 1px solid rgb(14, 14, 14);
+    margin-top: 700px;
+
+}
+/* Add these styles to your existing CSS file or in a new <style> tag */
+
+/* Contact Section */
+.contact-icons {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 2rem;
+    
+  }
+  .contact-icons a:hover{
+    transform: scale(1.1);
+
+  }
+  
+  .contact-icons a {
+    margin-right: 10px;
+  }
+  
+  .contact-forms {
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    margin-top: 60px;
+  }
+  
+  .btn-primary {
+    background-color: #007bff;
+  }
+  
+  .glowing {
+    animation: glowingEffect 2s ease-in-out infinite;
+  }
+  
+  @keyframes glowingEffect {
+    0% {
+      box-shadow: 0 0 5px #007bff;
+    }
+    50% {
+      box-shadow: 0 0 20px #007bff;
+    }
+    100% {
+      box-shadow: 0 0 5px #007bff;
+    }
+  }
+  
+  .contact-form-wrapper {
+    padding: 100px 0;
+  }
+  
+  .contact-form {
+    padding: 30px 40px;
+    border-radius: 12px;
+    max-width: 400px;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+  }
+  
+  .contact-form .form-input,
+  .form-text-area {
+    background-color: #f0f4f5;
+    height: 50px;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-text-area {
+    background-color: #f0f4f5;
+    height: auto;
+    padding-left: 16px;
+  }
+  
+  .contact-form .form-control::placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+    opacity: 1;
+  }
+  
+  .contact-form .form-control:-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control::-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+  }
+  
+  .contact-form .form-control:focus {
+    border-color: #f33fb0;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #f33fb0;
+  }
+  
+  .contact-form .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+  }
+  
+  .contact-form .description {
+    color: #aeb4b9;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper {
+    text-align: center;
+  }
+  
+  .contact-form .submit-button-wrapper input {
+    border: none;
+    border-radius: 4px;
+    background-color: #f23292;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  
+  .contact-form .submit-button-wrapper input:hover {
+    background-color: #d30069;
+  }
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.6); /* Add a transparent background color */
+  }
+  
+  .modal-content {
+    background-color: transparent; /* Remove the background color */
+    margin: auto;
+    padding: 40px;
+    border-radius: 5px;
+    width: 50%;
+    max-width: 500px; /* Adjust the maximum width as needed */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  .contact-form-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  /* Add this style to your existing CSS file or in a new <style> tag */
+
+
+
+
+  
