@@ -19,7 +19,9 @@
       <nav>
         <div class="left">Nijil's Portfolio</div>
         <div class="right">
-          <ul>
+          <div class="hamburger" onclick="toggleMenu()"></div>
+
+          <ul id="menu">
             <li><a href="">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#projects">Projects</a></li>
@@ -71,7 +73,7 @@
             <img src="sql.png" alt="" />
           </div>
           <div class="skill">
-            <img src="angular.png" alt="" />
+            <img src="angular.png" class="img-fluid" alt="" />
           </div>
 
       </section>
@@ -137,7 +139,16 @@ Developed a Python Flask application that showcases the captivating "Space Photo
           
         </div>
       </section>
-      <hr class="fouthhr">
+      <hr class="fourthhr">
+      <section id="about" class="about-section">
+        <div class="about-content">
+          <h2>About Me</h2>
+          <p>
+            I am a Python developer with expertise in Django and Flask. I have a passion for building web applications and scripting, and I enjoy utilizing web scraping techniques to gather data. With a strong foundation in Python programming, I strive to create efficient and scalable solutions that meet client needs. I am constantly expanding my skills and staying up-to-date with the latest technologies in web development.
+          </p>
+        </div>
+      </section>
+      <hr class="fhr">      
       <section class="thirdSection" id="contact">
         <h1>Contact</h1>
         <div class="contact-icons">
@@ -176,13 +187,16 @@ Developed a Python Flask application that showcases the captivating "Space Photo
         </div>
       </div>
       
-      
-
-      
-
-
-
     </main>
+    <footer>
+      <div class="footer-content">
+        <p>&copy; 2023 Nijil's Portfolio. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#">Terms of Service</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+      </div>
+    </footer>
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script>
       var typed = new Typed("#element", {
@@ -208,9 +222,7 @@ function submitContactForm(event) {
   const email = emailInput.value;
   const message = messageInput.value;
 
-  // Add your code to handle the form submission here
-  // You can use JavaScript or a form submission library (e.g., Axios, Fetch) to send the form data
-  // Example:
+
   console.log("Name:", name);
   console.log("Email:", email);
   console.log("Message:", message);
@@ -230,7 +242,13 @@ function submitContactForm(event) {
   setTimeout(function () {
     successMessage.remove();
   }, 3000);
+  
 }
+function toggleMenu() {
+  var menu = document.getElementById("menu");
+  menu.classList.toggle("open");
+}
+
 
     </script>
   </body>
