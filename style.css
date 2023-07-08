@@ -7,81 +7,44 @@ body {
   color: black;
   font-family: "Poppins", sans-serif !important;
 }
-nav {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  height: 90px;
-  background-color: bisque;
-}
+
 .right {
   position: relative;
 }
-
-.hamburger {
-  display: none;
-  width: 24px;
-  height: 2px;
-  background-color: black;
-  cursor: pointer;
+.navbar {
+  background-color: bisque !important;
+  padding: 20px 0;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.navbar-brand {
+  font-size: 2rem;
+  font-weight: bold;
+  color: rgb(157, 18, 18);
+  margin: 16px;
+  margin-left: 90px;
+}
+.navbar-brand:hover {
+  color: rgb(157, 18, 18);
 }
 
-
+.navbar-nav li a {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: black;
+  transition: 0.3s;
+}
+.nav-item {
+  margin-right: 25px;
+}
+.custom-brand {
+  font-size: 24px !important;
+}
 
 @media (max-width: 767px) {
-
-  #menu li {
-    margin-right: 0;
-    margin-bottom: 10px;
-    background-color: white;
-    
-  }
-
-  .menu-open #menu {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-  .right ul {
-    display: none;
-    position: absolute;
-    top: 30px;
-    padding: 20px 0;
-    z-index: 1;
-    right: 150px;
-    text-align: center;
-  }
-
-  .right ul.open {
-    display: block;
-  }
-
-  .right .hamburger {
-    display: block;
-  }
-
-  .right .hamburger::before,
-  .right .hamburger::after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: black;
-    position: absolute;
-  }
-
-  .right .hamburger::before {
-    top: -8px;
-  }
-
-  .right .hamburger::after {
-    top: 8px;
-  }
-
   .secondSection,
   .thirdSection {
     max-width: 90vw;
     margin: 0 auto;
-    padding: 0 20px;
   }
 
   .thirdSection iframe {
@@ -89,21 +52,20 @@ nav {
     height: 300px;
     padding-bottom: 56.25%; /* 16:9 aspect ratio for responsive iframe */
   }
+  .thirdSection p {
+    word-break: break-all;
+    overflow: hidden;
+    display: inline-block;
+    font-size: 1rem;
+  }
+  .thirdhr {
+    margin-top: 10px !important;
+  }
+  .skill {
+    margin-top: 110px !important;
+  }
 }
-nav ul {
-  display: flex;
-  justify-content: center;
-  margin-bottom: 0px;
-}
-nav ul li {
-  list-style: none;
-  margin: 0 23px;
-}
-nav ul li a {
-  margin: 0 23px;
-  text-decoration: none;
-  color: black;
-}
+
 nav ul li a:hover {
   color: rgb(157, 18, 18);
 }
@@ -112,18 +74,29 @@ nav ul li a:hover {
 }
 .firstSection {
   display: flex;
-  justify-content: space-around;
+  flex-wrap: wrap;
   align-items: center;
-  margin: 130px 0;
+  justify-content: center;
+  padding: 60px 0;
+  margin-top: 90px;
 }
+
 .firstSection > div {
-  width: 30%;
+  width: 50%;
+  text-align: center;
+  margin-bottom: 30px;
 }
 .leftsection {
   font-size: 3rem;
 }
+.rightsection {
+  display: flex;
+  justify-content: center;
+}
+
 .rightsection img {
   width: 100%;
+  max-width: 300px;
 }
 .name {
   color: rgb(157, 18, 18);
@@ -167,6 +140,7 @@ nav ul li a:hover {
 .fhr {
   border: none;
   margin: 25px;
+  margin-top: 150px;
 }
 
 .skills > div img:hover {
@@ -223,35 +197,40 @@ nav ul li a:hover {
   margin-top: 700px;
 }
 .about-section {
-    background-color: bisque;
-    padding: 120px 0;
-    
+  background-color: bisque;
+  padding: 120px 0;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.about-content h2 {
+  color: #007bff;
+  font-size: 38px;
+  margin-bottom: 40px;
+}
+
+.about-content p {
+  color: #444;
+  font-size: 20px;
+  line-height: 1.6;
+}
+
+@media (max-width: 767px) {
+  .firstSection > div {
+    width: 100%;
   }
-  
+  .firstSection {
+    margin-top: 0;
+  }
   .about-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+    padding: 0 20px;
   }
-  
-  .about-content h2 {
-    color: #007bff;
-    font-size: 28px;
-    margin-bottom: 20px;
-  }
-  
-  .about-content p {
-    color: #444;
-    font-size: 16px;
-    line-height: 1.6;
-  }
-  
-  @media (max-width: 767px) {
-    .about-content {
-      padding: 0 20px;
-    }
-  }
-  
+}
+
 /* Contact Section */
 .contact-icons {
   display: flex;
@@ -420,20 +399,18 @@ nav ul li a:hover {
     margin: 10px;
     margin-top: 70px;
   }
-  .thirdSection{
+  .thirdSection {
     height: 100%;
   }
-  .fourthhr{
+  .fourthhr {
     margin-top: 100px;
   }
-  .glowing{
+  .glowing {
     margin-bottom: 40px;
   }
-  .contact-icons{
+  .contact-icons {
     margin-top: 40px;
   }
-
-  
 }
 footer {
   background-color: bisque;
